@@ -68,18 +68,23 @@ header {
   color: var(--color-black);
 }
 .nav-studia-one {
+  position: relative;
   color: var(--color-primary);
 }
 .nav-studia-one:after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
   display: block;
-  position: relative;
-  bottom: -33px;
-  width: 48px;
+  width: 100%;
   height: 4px;
   background-color: var(--color-primary);
   border-radius: 2px;
-  content: "";
 }
+
 .nav-bar > ul > li > a {
   display: block;
   font-weight: 500;
@@ -475,13 +480,15 @@ address {
   color: var(--color-black);
 }
 .nav-portfolio-two {
+  position: relative;
   color: var(--color-primary);
 }
 .nav-portfolio-two:after {
   display: block;
-  position: relative;
-  bottom: -33px;
-  width: 78px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   height: 4px;
   background-color: var(--color-primary);
   border-radius: 2px;
