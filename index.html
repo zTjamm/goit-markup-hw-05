@@ -42,7 +42,18 @@
         <!-- Шапка с кнопкой-->
     <section class="section-one">
         <h1 class="h1" >эффективные решения для вашего бизнеса</h1>
-        <button class="button" type="button">Заказать услугу</button>        
+        <button class="button" type="button" data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+        <div class="modal">            
+            <button class="button-close" data-modal-close>
+                <div class="icon-closed">
+                    <svg width="30px" height="30px">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </div>
+            </button>
+            </div>  
+        </div>        
     </section>  
         <!-- первая секция -->
         <section class="section no-bottom">
@@ -307,6 +318,7 @@
             </ul>
             </div>
         </div>
-    </footer>    
+    </footer>   
+    <script src="./js/modal.js"></script>
     </body>
 </html>
